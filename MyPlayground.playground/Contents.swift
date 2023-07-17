@@ -1,54 +1,41 @@
 import UIKit
 
-//struct Sport {
-//    var name : String
-//    var isOlympicSport: Bool
+//struct Person {
+//    var name: String
 //
-//    var olympicStatus: String{
-//        if isOlympicSport{
-//            return "\(name) is an Olympic Sport"
-//        } else {
-//            return "\(name) is not an Olympic Sport"
-//        }
+//    init (name: String){
+//        print("\(name) was born!")
+//        self.name = name
 //    }
 //}
-//
-//
-//let newSport = Sport(name: "new", isOlympicSport : false)
-//print (newSport.olympicStatus)
 
-//struct Progress{
-//    var task: String
-//    var amount: Int{
-//        didSet{
-//            print("\(task) is now \(amount)% complete")
-//        }
+//struct FamilyTree {
+//    init(){
+//        print("Creating family tree!")
 //    }
 //}
 //
-//var progress = Progress(task: "qwer", amount: 0)
-//progress.amount = 30;
+//struct Person {
+//    var name: String
+//    var familyTree = FamilyTree()
+//
+//    init (name : String){
+//        self.name = name
+//    }
+//}
+//
+//var ed = Person(name: "Ed")
 
-//struct City{
-//    var population : Int
-//
-//    func collectTaxt() -> Int {
-//        return population * 1000
-//    }
-//}
-//
-//
-//let london = City (population : 30_000)
-//print(london.collectTaxt())
 
 struct Person {
-    var name: String
+    private var id: String
     
-    mutating func makeAnonymous(){
-        name = "Anonymous"
+    init (id: String){
+        self.id = id
+    }
+    
+    func identify() -> String {
+        return "My social security number is \(id)"
     }
 }
 
-var person = Person(name: "Ed")
-person.makeAnonymous()
-print(person.name)
