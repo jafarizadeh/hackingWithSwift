@@ -1,41 +1,74 @@
 import UIKit
 
-//struct Person {
+//class Dog {
 //    var name: String
+//    var breed: String
 //
+//    init (name: String, breed: String)
+//    {
+//        self.name = name
+//        self.breed = breed
+//    }
+//}
+//
+//
+//class Poodle: Dog {
 //    init (name: String){
-//        print("\(name) was born!")
-//        self.name = name
+//        super.init (name: name, breed: "Poodle")
 //    }
 //}
 
-//struct FamilyTree {
+//final class Dog {
+//    func makeNoise(){
+//        print ("Woof!")
+//    }
+//}
+//
+//class Poodle: Dog {
+//    override func makeNoise(){
+//        print("Yip!")
+//    }
+//}
+//
+//let poppy = Poodle()
+//poppy.makeNoise()
+
+//struct Singer{
+//    var name = "Taylor"
+//}
+//
+//var singer = Singer ()
+//print(singer.name)
+//
+//var singer2 = singer
+//singer2.name = "Justin"
+//print(singer.name)
+
+//class Person{
+//    var name = "John"
+//
 //    init(){
-//        print("Creating family tree!")
+//        print("\(name) is alive!")
+//    }
+//
+//    func printGreeting(){
+//        print("Hello, I'm \(name)")
+//    }
+//
+//    deinit {
+//        print ("\(name) is no more!")
 //    }
 //}
 //
-//struct Person {
-//    var name: String
-//    var familyTree = FamilyTree()
-//
-//    init (name : String){
-//        self.name = name
-//    }
+//for _ in 1...3 {
+//    let person = Person()
+//    person.printGreeting()
 //}
-//
-//var ed = Person(name: "Ed")
 
-
-struct Person {
-    private var id: String
-    
-    init (id: String){
-        self.id = id
-    }
-    
-    func identify() -> String {
-        return "My social security number is \(id)"
-    }
+class Singer{
+    let name = "Taylor"
 }
 
+let taylor = Singer()
+taylor.name = "Ed"
+print(taylor.name)
